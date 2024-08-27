@@ -1,0 +1,144 @@
+@import "../../app.scss";
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .services-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+  }
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 18px;
+      color: #00f7ff;
+      text-align: right;
+      letter-spacing: 2px;
+    }
+
+    hr {
+      width: 150px;
+      border: none;
+      border-top: 0.5px solid #00f7ff;
+      transition: 0.5s;
+
+      @include mobile {
+        width: 300px;
+      }
+    }
+    &:hover hr {
+      width: 300px;
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .title-top {
+      flex: 1;
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      hr {
+        width: 100px;
+        border: none;
+        border-top: 0;
+        transition: 0.5s;
+      }
+
+      h1 {
+        font-size: 50px;
+        font-weight: 100;
+        // color: #00f7ff;
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-weight: 100;
+
+        @include mobile {
+          font-size: 36px;
+        }
+
+        b {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &:hover hr {
+      width: 200px;
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    // display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    gap: 30px;
+    margin: 50px auto;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &:hover .textContainer hr {
+    width: 300px;
+  }
+}

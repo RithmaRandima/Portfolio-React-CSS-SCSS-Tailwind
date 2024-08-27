@@ -1,0 +1,28 @@
+.skill-box {
+  position: relative;
+  z-index: 10;
+  /* background: #000; */
+  margin: 12px auto;
+}
+
+.skill-box::after {
+  content: "";
+  background: rgba(0, 247, 255, 0.495);
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 1s;
+}
+
+.skill-box:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.skill-box:hover .box-icon {
+  transform: scale(0.9);
+}
