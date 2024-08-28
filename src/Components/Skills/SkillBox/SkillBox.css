@@ -3,6 +3,7 @@
   z-index: 10;
   /* background: #000; */
   margin: 12px auto;
+  animation: activation 2s linear infinite;
 }
 
 .skill-box::after {
@@ -25,4 +26,34 @@
 
 .skill-box:hover .box-icon {
   transform: scale(0.9);
+}
+
+.soft-skill-box::after {
+  content: "";
+  background: rgba(0, 247, 255, 0.495);
+  width: 0%;
+  height: 150%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  border-radius: 0;
+}
+
+.soft-skill-box:hover::after {
+  width: 150%;
+}
+
+@keyframes activation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

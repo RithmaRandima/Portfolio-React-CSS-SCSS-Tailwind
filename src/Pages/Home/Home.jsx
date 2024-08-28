@@ -7,10 +7,10 @@ import Projects from "../../Components/Projects/Projects";
 const Home = () => {
   return (
     <div>
-      {/* <Hero /> */}
-      {/* <Parallax /> */}
+      <Hero />
+      <Parallax />
       <Services />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Hero /> */}
       {/* <Hero /> */}
       {/* <Hero /> */}

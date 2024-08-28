@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
-// import ServicesBox from "./ServicesBox/ServicesBox";
+import ServicesBox from "./ServicesBox/ServicesBox";
 
 const variants = {
   initial: {
@@ -70,10 +70,10 @@ const Services = () => {
 
       {/* bottom */}
       <motion.div className="listContainer" variants={variants}>
-        {/* <ServicesBox />
         <ServicesBox />
         <ServicesBox />
-        <ServicesBox /> */}
+        <ServicesBox />
+        <ServicesBox />
       </motion.div>
     </motion.div>
   );
