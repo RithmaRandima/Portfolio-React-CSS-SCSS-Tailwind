@@ -50,7 +50,7 @@ function SampleNextArrow(props) {
         paddingTop: "1px",
         paddingRight: "1px",
         top: "10px",
-        left: "93%",
+        left: "9%",
         zIndex: "10",
       }}
       onClick={onClick}
@@ -73,7 +73,7 @@ function SamplePrevArrow(props) {
         paddingTop: "1px",
         paddingLeft: "0.2px",
         top: "10px",
-        left: "88%",
+        left: "5%",
         zIndex: "10",
       }}
       onClick={onClick}
@@ -114,7 +114,7 @@ const Skills = () => {
         </motion.p>
       </div>
 
-      <div className="w-[95%] md:w-[100%] mx-auto h-[100%] ">
+      <div className="w-[95%] md:w-[100%] mx-auto h-[100%]">
         <Slider {...settings}>
           {/* skill 01 */}
           <div className="w-[100%] h-[100%]">
@@ -178,7 +178,7 @@ const Skills = () => {
           </div>
 
           {/* skill 02 */}
-          <div className="w-[100%] h-[100%]">
+          <div className="w-[100%] h-[100%] ">
             <div className="h-[100%] w-[100%] grid grid-cols-1 md:grid-cols-2  px-5 mt-10">
               {/* left */}
               <div className="w-[100%] h-[100%] py-5 px-10">
