@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
 import ServicesBox from "./ServicesBox/ServicesBox";
+import { myServices } from "../../Data/MyServices";
 
 const variants = {
   initial: {
@@ -48,15 +49,6 @@ const Services = () => {
               <motion.b>What I Do</motion.b>{" "}
             </h1>
           </div>
-
-          {/* <div className="title">
-            <h1>
-              For
-              <motion.b whileHover={{ color: "#00f7ff" }}>
-                Web Development.
-              </motion.b>{" "}
-            </h1>
-          </div> */}
         </motion.div>
 
         <motion.div className="textContainer" variants={variants}>
@@ -70,10 +62,17 @@ const Services = () => {
 
       {/* bottom */}
       <motion.div className="listContainer" variants={variants}>
-        <ServicesBox />
-        <ServicesBox />
-        <ServicesBox />
-        <ServicesBox />
+        {myServices.map((service) => {
+          return (
+            <ServicesBox
+              key={service.id}
+              title={service.title}
+              description={service.description}
+              img={service.img}
+              icon={service.icon}
+            />
+          );
+        })}
       </motion.div>
     </motion.div>
   );
