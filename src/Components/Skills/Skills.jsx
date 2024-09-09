@@ -239,36 +239,43 @@ const Skills = () => {
                       icon={<VscVscode />}
                       duration={5}
                       color="#0078d7"
+                      title="VS Code"
                     />
                     <SkillBox
                       icon={<SiIntellijidea />}
                       duration={1}
                       color="#cc6699"
+                      title="Intelij IDEA"
                     />
                     <SkillBox
                       icon={<SiSublimetext />}
                       duration={3}
                       color="#ff9800"
+                      title="Sublime Text"
                     />
                     <SkillBox
                       icon={<SiVisualstudio />}
                       duration={2.5}
                       color="#9e35e0"
+                      title="Visual Studio"
                     />
                     <SkillBox
                       icon={<SiPycharm />}
                       duration={5}
                       color="#ffe873"
+                      title="Pycharm"
                     />
                     <SkillBox
                       icon={<IoLogoFigma />}
                       duration={1}
                       color="#f24e1e"
+                      title="Figma"
                     />
                     <SkillBox
                       icon={<SiAdobephotoshop />}
                       duration={3.2}
                       color="#040c3c"
+                      title="Photo Shop"
                     />
                   </div>
                 </div>

@@ -21,6 +21,14 @@
   transition: 1s;
 }
 
+.box-title {
+  opacity: 0;
+}
+
+.skill-box-container:hover .box-title {
+  opacity: 1;
+}
+
 .skill-box:hover::after {
   transform: translate(-50%, -50%) scale(1);
 }
