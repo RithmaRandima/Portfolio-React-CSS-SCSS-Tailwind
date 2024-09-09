@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import EducationBox from "./EducationBox/EducationBox";
+import { myEducation } from "../../Data/MyEducation";
 
 const Education = (props) => {
   return (
@@ -26,8 +27,17 @@ const Education = (props) => {
 
       <div className=" mx-auto w-[90%] md:w-[100%]">
         {/* use map method array */}
-        <EducationBox />
-        <EducationBox />
+        {myEducation.map((education) => {
+          return (
+            <EducationBox
+              key={education.id}
+              year={education.year}
+              title={education.title}
+              place={education.place}
+              status={education.status}
+            />
+          );
+        })}
       </div>
     </div>
   );
