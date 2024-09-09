@@ -11,7 +11,7 @@ const EducationBox = (props) => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className=" text-[22px] font-[900] tracking-[2px] text-[#00f7ff]"
+          className=" text-[22px] font-[900] tracking-[2px] text-[#00f7ff] mb-[10px] md:mb-0"
         >
           2000
         </motion.p>

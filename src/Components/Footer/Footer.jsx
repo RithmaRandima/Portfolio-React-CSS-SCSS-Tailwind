@@ -25,9 +25,9 @@ const Footer = () => {
       </div>
 
       {/* copyright */}
-      <p className="text-[13px] tracking-[1px] mt-[10px]">
+      <p className="text-[12px] mt-[10px] tracking-[3px]">
         &#169;
-        <span className="text-[#00f7ff] font-[500] mr-[2px]">RithmaRandy.</span>
+        <span className="text-[#00f7ff] font-[500]">RithmaRandy.</span>
         All rights reserved
       </p>
     </div>

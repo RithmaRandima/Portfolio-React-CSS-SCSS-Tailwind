@@ -36,7 +36,7 @@ const Services = () => {
       animate={"animate"}
     >
       {/* top title */}
-      <div className="services-top-text ">
+      <div className="services-top-text pt-[50px]">
         <h1 className="text-[50px] font-[700] tracking-[2px] text-[#00f7ff] mx-auto mb-[10px]">
           My Services
         </h1>

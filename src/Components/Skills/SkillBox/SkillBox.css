@@ -1,9 +1,10 @@
 .skill-box {
   position: relative;
   z-index: 10;
-  /* background: #000; */
   margin: 12px auto;
-  animation: activation 2s linear infinite;
+}
+.skill-box:hover h1 {
+  color: #000 !important;
 }
 
 .skill-box::after {
@@ -44,16 +45,4 @@
 
 .soft-skill-box:hover::after {
   width: 150%;
-}
-
-@keyframes activation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
 }

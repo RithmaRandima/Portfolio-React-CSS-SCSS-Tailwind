@@ -20,8 +20,8 @@ function SampleNextArrow(props) {
         borderRadius: "50%",
         paddingTop: "1px",
         paddingRight: "1px",
-        top: "10px",
-        left: "93%",
+        top: "15px",
+        left: "95%",
         zIndex: "10",
         rotate: "90deg",
       }}
@@ -44,8 +44,8 @@ function SamplePrevArrow(props) {
         borderRadius: "50%",
         paddingTop: "1px",
         paddingLeft: "0.2px",
-        top: "10px",
-        left: "88%",
+        top: "15px",
+        left: "90%",
         zIndex: "10",
         rotate: "90deg",
       }}
@@ -77,7 +77,7 @@ const ProjectContainer = () => {
         </h1>
       </div>
       {/* content section */}
-      <div className="w-[90%] h-[100%]  mx-auto">
+      <div className="w-[85%] md:w-[90%] h-[100%]  mx-auto">
         {/* box */}
         <Slider {...settings}>
           <ProjectContainerBox />

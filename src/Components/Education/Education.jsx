@@ -24,7 +24,7 @@ const Education = (props) => {
         </motion.p>
       </div>
 
-      <div className=" mx-auto">
+      <div className=" mx-auto w-[90%] md:w-[100%]">
         {/* use map method array */}
         <EducationBox />
         <EducationBox />
