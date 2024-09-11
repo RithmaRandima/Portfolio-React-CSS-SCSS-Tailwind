@@ -29,6 +29,13 @@
       width: 60%;
       margin: 10px auto;
     }
+    h1 {
+      font-size: 45px;
+
+      @include mobile {
+        font-size: 35px;
+      }
+    }
   }
 
   .container {

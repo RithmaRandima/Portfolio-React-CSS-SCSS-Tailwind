@@ -1,12 +1,9 @@
 .serviceBox {
-  width: 100%;
   padding: 20px 30px;
   display: flex;
   align-items: center;
-  gap: 30px;
   border-radius: 10px;
-  background-color: #0b0b1d;
-  margin-bottom: 30px;
+  background-color: #090919;
   position: relative;
 }
 
@@ -22,7 +19,7 @@
   top: 50%;
   z-index: 1;
   overflow: hidden;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

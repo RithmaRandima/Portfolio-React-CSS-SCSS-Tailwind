@@ -19,7 +19,8 @@
     // top: 0;
 
     @include mobile {
-      font-size: 72px;
+      font-size: 60px;
+      width: 90%;
       text-align: center;
     }
   }
@@ -34,7 +35,8 @@
     z-index: 3;
 
     @include mobile {
-      background-size: contain;
+      background-size: cover;
+      // background-position: left;
       background-repeat: no-repeat;
     }
   }
@@ -58,5 +60,9 @@
     height: 100%;
     position: absolute;
     z-index: 1;
+  }
+
+  @include mobile {
+    height: 60vh;
   }
 }

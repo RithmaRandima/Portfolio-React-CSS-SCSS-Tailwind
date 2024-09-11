@@ -17,7 +17,7 @@ const Parallax = ({ type }) => {
   const planetBg = useTransform(scrollYProgress, [0, 1], ["-20%", "100%"]);
 
   return (
-    <div ref={ref} className="h-[100vh]">
+    <div ref={ref} className="h-[100%] md:h-[100vh]">
       <HeroBottom />
 
       <div
