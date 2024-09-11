@@ -28,7 +28,7 @@ const Navbar = () => {
           <a href="#">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="#">
+          <a href="https://github.com/RithmaRandima">
             <IoLogoGithub className="social-icon" />
           </a>
           <a href="#">

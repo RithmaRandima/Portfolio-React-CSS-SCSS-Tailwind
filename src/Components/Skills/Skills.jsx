@@ -94,14 +94,14 @@ const Skills = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="w-[100%] h-[100%]  flex flex-col items-center py-10 ">
+    <div className="w-[100%] h-[100%]  flex flex-col items-center pt-10 pb-2 md:pb-5 ">
       {/* topic container */}
-      <div className="w-[50%] text-center mb-10">
+      <div className="w-[90%] md:w-[50%] text-center mb-10">
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
-          className="text-[45px] font-[700] tracking-[2px] text-[#00f7ff]"
+          className="text-[35px] md:text-[45px] font-[700] tracking-[2px] text-[#00f7ff] mb-3"
         >
           My Skills{" "}
         </motion.h1>
@@ -109,6 +109,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-[16px] tracking-[2px]"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem?
         </motion.p>
@@ -118,13 +119,13 @@ const Skills = () => {
         <Slider {...settings}>
           {/* skill 01 */}
           <div className="w-[100%] h-[100%]">
-            <div className="h-[100%] w-[100%] grid grid-cols-1 md:grid-cols-2  px-5 mt-10">
+            <div className="h-[100%] w-[100%] grid grid-cols-1 md:grid-cols-2  md:px-5 mt-10">
               {/* left */}
-              <div className="w-[100%] h-[100%] py-5 px-10">
-                <h1 className="text-[white] text-[30px] font-[700] mb-[20px] hover:text-[#00f7ff] tracking-[2px]">
+              <div className="w-[100%] h-[100%] py-5 px-2 md:px-10">
+                <h1 className="text-[white] text-[25px] md:text-[30px] font-[700] mb-[20px] hover:text-[#00f7ff] tracking-[2px]">
                   Technical Skills
                 </h1>
-                <h2 className="tracking-[1px]  text-neutral-400 leading-[30px] text-justify text-[18px]">
+                <h2 className="tracking-[1px]  text-neutral-400 leading-[30px] text-justify text-[16px] md:text-[17px]">
                   Under my skills, I have developed a diverse and versatile set
                   of technical and creative abilities that allow me to tackle a
                   wide range of challenges in software development, web design,
@@ -136,11 +137,11 @@ const Skills = () => {
               {/* right */}
               <div className="w-[100%]  h-[100%] ">
                 {/* content box 01 */}
-                <div className="mb-[50px]">
-                  <h1 className="text-[25px] font-[700] mb-5 tracking-[2px] text-[#fff]">
+                <div className="mb-[30px]">
+                  <h1 className=" text-[22px] md:text-[23px] font-[700] mb-5 tracking-[2px] text-[#fff]">
                     Languages
                   </h1>
-                  <div className="w-[100%] h-[100%]  grid grid-cols-5 gap-2 py-2">
+                  <div className="w-[100%] h-[100%]  grid grid-cols-5 md:grid-cols-6 gap-2 py-2">
                     <SkillBox
                       icon={<FaReact />}
                       title="React"
@@ -231,10 +232,10 @@ const Skills = () => {
 
                 {/* content box 02 */}
                 <div>
-                  <h1 className="text-[25px] font-[700] mb-5 tracking-[2px] text-[#fff]">
+                  <h1 className="text-[21px] md:text-[23px] font-[700] mb-5 tracking-[2px] text-[#fff]">
                     Design And Editor Tools
                   </h1>
-                  <div className="w-[100%] h-[100%]  grid grid-cols-5 gap-2 py-2">
+                  <div className="w-[100%] h-[100%]  grid grid-cols-5 md:grid-cols-6 gap-2 py-2">
                     <SkillBox
                       icon={<VscVscode />}
                       duration={5}
@@ -274,7 +275,7 @@ const Skills = () => {
                     <SkillBox
                       icon={<SiAdobephotoshop />}
                       duration={3.2}
-                      color="#040c3c"
+                      // color="#040c3c"
                       title="Photo Shop"
                     />
                   </div>
@@ -287,11 +288,11 @@ const Skills = () => {
           <div className="w-[100%] h-[100%] ">
             <div className="h-[100%] w-[100%] grid grid-cols-1 md:grid-cols-2  px-5 mt-10">
               {/* left */}
-              <div className="w-[100%] h-[100%] py-5 px-10">
-                <h1 className="text-[white] text-[30px] font-[700] mb-[20px] hover:text-[#00f7ff] tracking-[2px]">
+              <div className="w-[100%] h-[100%] py-5 md:px-10">
+                <h1 className="text-[white] text-[25px] md:text-[30px]  font-[700] mb-[20px] hover:text-[#00f7ff] tracking-[2px]">
                   Soft Skills
                 </h1>
-                <h2 className="tracking-[1px] text-neutral-400 leading-[30px] text-justify text-[18px]">
+                <h2 className="tracking-[1px] text-neutral-400 leading-[30px] text-justify text-[16px] md:text-[17px]">
                   I believe that technical expertise alone does not define a
                   successful professional. My soft skills complement my
                   technical abilities and play a crucial role in my overall

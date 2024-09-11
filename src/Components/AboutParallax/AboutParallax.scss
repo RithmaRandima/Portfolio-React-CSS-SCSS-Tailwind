@@ -31,8 +31,9 @@
     z-index: 3;
 
     @include mobile {
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: right;
     }
   }
   .planets {
@@ -55,5 +56,17 @@
     height: 100%;
     position: absolute;
     z-index: 1;
+  }
+
+  .parallax-text {
+    @include mobile {
+      font-size: 48px;
+      width: 90%;
+      margin-top: -50px;
+    }
+  }
+
+  @include mobile {
+    height: 50vh;
   }
 }

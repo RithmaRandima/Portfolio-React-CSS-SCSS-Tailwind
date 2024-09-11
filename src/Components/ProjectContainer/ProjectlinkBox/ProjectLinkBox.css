@@ -1,0 +1,7 @@
+.link-box-icon-text {
+  opacity: 0;
+}
+
+.link-box:hover .link-box-icon-text {
+  opacity: 1;
+}

@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import "./AboutParallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
-import HeroBottom from "../HeroBottom/HeroBottom";
-import img from "../../Asset/planets.png";
 
 const AboutParallax = ({ type }) => {
   const ref = useRef();
@@ -24,7 +22,9 @@ const AboutParallax = ({ type }) => {
       }}
     >
       {/* <img src={} alt="" /> */}
-      <motion.h1 style={{ y: yText }}>I'm Ready to Work With You</motion.h1>
+      <motion.h1 style={{ y: yText }} className="parallax-text">
+        I'm Ready to Work With You
+      </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>
     </div>

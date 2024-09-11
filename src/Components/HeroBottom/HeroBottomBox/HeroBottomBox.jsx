@@ -6,7 +6,7 @@ const HeroBottomBox = (props) => {
   const [counterOn, setCounterOn] = useState(false);
 
   const changeColor = () => {
-    if (window.scrollY >= 10 && window.scrollY <= 700) {
+    if (window.scrollY >= 10 && window.scrollY <= 1000) {
       setCounterOn(true);
     } else {
       setCounterOn(false);

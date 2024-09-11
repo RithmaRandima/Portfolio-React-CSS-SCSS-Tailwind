@@ -21,7 +21,7 @@ const SoftSkillBox = (props) => {
       variants={iconVariants(props.duration)}
       initial="initial"
       animate="animate"
-      className="skill-box soft-skill-box pl-10 bg-re400 w-[70%] h-[60px] flex items-center gap-5 rounded-[17px]  cursor-pointer text-[#00f7ff] hover:text-[#000] overflow-hidden duration-300 border-2 border-[#00f7ff20] hover:border-[rgba(0, 247, 255, 0.495)]"
+      className="skill-box soft-skill-box pl-10 bg-re400 w-[95%] md:w-[70%] h-[60px] flex items-center gap-5 rounded-[17px]  cursor-pointer text-[#00f7ff] hover:text-[#000] overflow-hidden duration-300 border-2 border-[#00f7ff20] hover:border-[rgba(0, 247, 255, 0.495)]"
       title={props.title}
       style={{ animationDelay: props.animationDelay }}
     >

@@ -5,6 +5,7 @@ import ProjectContainerBox from "./ProjectContainerBox/ProjectContainerBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { myWorks } from "../../Data/MyWorks";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -72,7 +73,7 @@ const ProjectContainer = () => {
     <div className="project-container">
       {/* topic */}
       <div className="w-[100%] text-center mb-2">
-        <h1 className="text-[40px] font-[700] tracking-[1px] text-[#00f7ff]">
+        <h1 className="text-[35px] font-[700] tracking-[1px] text-[#00f7ff]">
           My Works
         </h1>
       </div>
@@ -80,9 +81,21 @@ const ProjectContainer = () => {
       <div className="w-[85%] md:w-[90%] h-[100%]  mx-auto">
         {/* box */}
         <Slider {...settings}>
-          <ProjectContainerBox />
-          <ProjectContainerBox />
-          <ProjectContainerBox />
+          {myWorks.map((work) => {
+            return (
+              <ProjectContainerBox
+                key={work.id}
+                number={work.number}
+                title={work.title}
+                languages={work.languages}
+                img={work.img}
+                techniques={work.techniques}
+                githubLink={work.githubLink}
+                figmaLink={work.figmaLink}
+                liveViewLink={work.liveViewLink}
+              />
+            );
+          })}
         </Slider>
       </div>
     </div>

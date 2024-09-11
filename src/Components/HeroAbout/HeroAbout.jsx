@@ -109,7 +109,10 @@ const HeroAbout = ({ type }) => {
     >
       {/* top */}
       <div className="hero-about">
-        <motion.h1 style={{ y: yAboutTitleText }}>
+        <motion.h1
+          style={{ y: yAboutTitleText }}
+          className="mt-[-100px] md:mt-[0px]"
+        >
           Hi I'm <span>Rithma</span>{" "}
         </motion.h1>
         <motion.h2 style={{ y: yAboutSubTitleText }}>
@@ -131,113 +134,120 @@ const HeroAbout = ({ type }) => {
       <div className="about-bottom-info-section w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2">
         {/* img */}
         <div>
-          <div className="w-[160px] h-[160px] md:w-[450px] md:h-[450px] about-bottom-img-container">
+          <div className="w-[180px] h-[180px] md:w-[450px] md:h-[450px] about-bottom-img-container">
             <img src={img} alt="" className="w-[100%] h-[100%] object-cover " />
           </div>
         </div>
 
         {/* details */}
         <div className="w-[100%] h-[100%] ">
-          <div className="w-[95%] md:w-[100%] mx-auto h-[100%] py-2">
+          <div className=" w-[95%] md:w-[100%] mx-auto h-[100%] py-2">
             <Slider {...settings}>
               {/* Details 01 */}
-              <div className="w-[100%] h-[100%] pt-16 px-5">
-                <div className="h-[100%] w-[100%]  p-5 px-10 mt-6">
+              <div className="w-[100%] h-[100%] md:pt-10 px-5">
+                <div className="h-[100%] w-[100%]  p-5 px-1 md:px-6 mt-6">
                   <h1 className="text-[white] text-[40px] font-[100] mb-[14px] hover:text-[#00f7ff]">
                     Who Am I?
                   </h1>
 
-                  <p className="text-[17px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur obcaecati explicabo iure quia beatae, sint
-                    possimus ea, officia quibusdam voluptas ut quis ducimus
-                    optio quae esse laborum exercitationem sed facere ad illum
-                    eius! Architecto consequatur veritatis itaque facere? Qui,
-                    quidem!
+                  <p className="text-[15px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
+                    Welcome! I’m a dedicated self-driven and hardworking
+                    individual with a deep passion for technology and
+                    innovation. With a strong foundation in HTML, CSS
+                    JavaScript, React.js, Next.js, Node.js, Python, and Java, I
+                    specialize in developing scalable, user-friendly software
+                    solutions. My journey in tech began with my{" "}
+                    <span className="text-[#00f7ff] font-[600]">
+                      HIGHER NATIONAL DIPLOMA IN COMPUTING{" "}
+                    </span>{" "}
+                    , and since then, I’ve worked on a variety of projects
+                    ranging from dynamic web applications to complex data
+                    systems.
                   </p>
 
-                  <p className="text-[17px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur obcaecati explicabo iure quia beatae, sint
-                    possimus ea, officia quibusdam voluptas ut quis ducimus
-                    optio quae esse laborum exercitationem sed facere ad illum
-                    eius! Architecto consequatur veritatis itaque facere? Qui,
-                    quidem!
+                  <p className="text-[15px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
+                    I thrive in collaborative environments and enjoy tackling
+                    complex problems with creative, efficient solutions. My
+                    commitment to continuous learning drives me to stay updated
+                    with the latest industry trends and advancements. Through
+                    this portfolio, I aim to showcase my technical skills,
+                    project experience, and enthusiasm for software engineering.
+                    Let’s connect and explore how we can innovate together!
                   </p>
                 </div>
               </div>
               {/* details 02 */}
-              <div className="w-[100%] h-[100%] pt-12 px-5">
+              <div className="w-[100%] h-[100%] pt-5 md:pt-12 md:px-5 px-3 ">
                 <div className="h-[100%] w-[100%]  p-5 px-10 mt-10">
                   <h1 className="text-white text-[40px] font-[100] mb-[14px] hover:text-[#00f7ff]">
                     My Details
                   </h1>
 
-                  <ul className="list-disc ml-12 mt-5">
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                  <ul className="list-disc md:ml-12 mt-5">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Name</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
                         Rithma Randima
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Age</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        24 years Old
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Birthday</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        17 - 03 - 2000
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Phone</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        (+94) 77 022 0407
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Email</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        rithma.r.nandasiri@gmail.com
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Address</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
                         Rithma Randima
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">City</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        Galle
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Nationality</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        Sri Lankan
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Languages</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
                         English, Sinhala
                       </span>
                     </li>
 
-                    <li className="text-[#00f7ff] text-[18px] mb-3">
+                    <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Experience</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
                         New to this field

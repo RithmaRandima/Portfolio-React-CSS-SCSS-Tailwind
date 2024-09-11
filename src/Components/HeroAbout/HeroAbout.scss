@@ -26,10 +26,15 @@
         color: #00f7ff;
         font-weight: 700;
         font-size: 80px;
+
+        @include mobile {
+          font-size: 70px;
+          text-align: center;
+        }
       }
 
       @include mobile {
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
       }
     }
@@ -42,8 +47,10 @@
       margin-left: 200px;
 
       @include mobile {
-        margin-top: -20px;
-        margin-left: 150px;
+        margin-top: -0px;
+        margin-left: 70px;
+        font-size: 30px;
+        width: 80%;
         font-size: 30px;
       }
     }
@@ -59,8 +66,7 @@
       background-size: cover;
 
       @include mobile {
-        left: 26%;
-
+        left: 33%;
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -74,11 +80,16 @@
       width: 50%;
       font-weight: bold;
     }
+
+    @include mobile {
+      height: 70vh;
+    }
   }
 
   .about-bottom-info-section {
     position: relative;
     top: -300px;
+    height: 100%;
 
     .about-bottom-img-container {
       position: absolute;
@@ -88,8 +99,8 @@
       top: 180px;
 
       @include mobile {
-        top: -320px;
-        left: 65%;
+        top: -430px;
+        left: 50%;
         background-repeat: no-repeat;
       }
     }
@@ -109,6 +120,5 @@
 
   @include mobile {
     height: 100%;
-    margin-bottom: 30px;
   }
 }
