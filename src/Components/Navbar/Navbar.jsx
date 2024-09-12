@@ -22,19 +22,27 @@ const Navbar = () => {
           <GoDotFill className="inline-block text-[#00f7ff] text-[18px] mb-[-7px] ml-[-1px]" />
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a
+            href="https://www.facebook.com/profile.php?id=100084298615209"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaFacebook className="social-icon" />
           </a>
-          <a href="#">
+          <a href="#" target="_blank" rel="noreferrer">
             <RiInstagramFill className="social-icon" />
           </a>
-          <a href="#">
+          <a href="#" target="_blank" rel="noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="https://github.com/RithmaRandima">
+          <a
+            href="https://github.com/RithmaRandima"
+            target="_blank"
+            rel="noreferrer"
+          >
             <IoLogoGithub className="social-icon" />
           </a>
-          <a href="#">
+          <a href="#" target="_blank" rel="noreferrer">
             <FaTwitter className="social-icon" />
           </a>
         </div>

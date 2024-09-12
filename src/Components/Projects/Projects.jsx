@@ -82,7 +82,7 @@ const Projects = () => {
           window.scrollTo(0, 0);
         }}
       >
-        <button className="bg-white mx-auto text-[13px] md:text-[15px] uppercase px-5 py-2 text-black font-[700] tracking-[2px] cursor-pointer hover:bg-[#00f7ff] hover:scale-90 duration-300">
+        <button className="bg-white mx-auto text-[13px]  uppercase px-3 py-2 text-black font-[700] tracking-[2px] cursor-pointer hover:bg-[#00f7ff] hover:scale-90 duration-300">
           show more
         </button>
       </Link>

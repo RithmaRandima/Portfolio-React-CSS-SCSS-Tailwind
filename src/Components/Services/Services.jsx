@@ -37,8 +37,8 @@ const Services = () => {
       animate={"animate"}
     >
       {/* top title */}
-      <div className="services-top-text pt-[80px] md:pt-[50px]">
-        <h1 className="text-[35px] md:text-[45px] font-[700] tracking-[2px] text-[#00f7ff] md:mx-auto mb-[10px]">
+      <div className="services-top-text pt-[40px] md:pt-[50px]">
+        <h1 className="text-[35px] md:text-[45px] font-[700] tracking-[2px] text-[#00f7ff] mx-auto mb-[10px]">
           My Services
         </h1>
 
@@ -70,6 +70,7 @@ const Services = () => {
               description={service.description}
               img={service.img}
               icon={service.icon}
+              bgcolor={service.bgcolor}
             />
           );
         })}

@@ -7,19 +7,27 @@ const Footer = () => {
   return (
     <div className="w-full py-5 bg-black flex justify-center items-center flex-col ">
       <div className="flex items-center gap-8  w-fit mx-auto">
-        <a href="#">
+        <a
+          href="https://www.facebook.com/profile.php?id=100084298615209"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaFacebook className="text-[19px] hover:scale-110 duration-300 text-white hover:text-[#00f7ff]" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank" rel="noreferrer">
           <RiInstagramFill className="text-[19px] hover:scale-110 duration-300 text-white hover:text-[#00f7ff]" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank" rel="noreferrer">
           <FaLinkedin className="text-[19px] hover:scale-110 duration-300 text-white hover:text-[#00f7ff]" />
         </a>
-        <a href="#">
+        <a
+          href="https://github.com/RithmaRandima"
+          target="_blank"
+          rel="noreferrer"
+        >
           <IoLogoGithub className="text-[19px] hover:scale-110 duration-300 text-white hover:text-[#00f7ff]" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank" rel="noreferrer">
           <FaTwitter className="text-[19px] hover:scale-110 duration-300 text-white hover:text-[#00f7ff]" />
         </a>
       </div>
