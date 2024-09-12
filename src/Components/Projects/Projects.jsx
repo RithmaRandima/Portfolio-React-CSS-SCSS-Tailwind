@@ -2,33 +2,11 @@ import { useRef } from "react";
 import "./Projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const items = [
-  {
-    id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-  {
-    id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-  {
-    id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-  {
-    id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-];
+import { myWorks } from "../../Data/MyWorks";
+import ProjectlinkBox from "../ProjectContainer/ProjectlinkBox/ProjectlinkBox";
+import { IoLogoGithub } from "react-icons/io";
+import { BiLogoFigma } from "react-icons/bi";
+import { VscRunAll } from "react-icons/vsc";
 
 const Single = ({ item }) => {
   const ref = useRef();
@@ -46,10 +24,25 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <motion.div className="textContainer relative" style={{ y }}>
+            <h1 className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[300px] md:text-[380px] font-[700] z-[-1] text-[rgba(255,255,255,0.03)] ">
+              {item.number}
+            </h1>
             <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-            <button>See Demo</button>
+            <p>{item.description}</p>
+            <div className="flex items-center w-[100%]  gap-6 py-1 justify-end">
+              <a href={item.githubLink} target="_blank" rel="noreferrer">
+                <ProjectlinkBox title="GitHub" icon={<IoLogoGithub />} />
+              </a>
+
+              <a href={item.figmaLink} target="_blank" rel="noreferrer">
+                <ProjectlinkBox title="Figma" icon={<BiLogoFigma />} />
+              </a>
+
+              <a href={item.liveViewLink} target="_blank" rel="noreferrer">
+                <ProjectlinkBox icon={<VscRunAll />} title="View " />
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
@@ -76,12 +69,20 @@ const Projects = () => {
         <h1>My Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+      {myWorks.map((item) => {
+        if (item.id < 6) {
+          return <Single item={item} key={item.id} />;
+        }
+      })}
 
-      <Link to="/works" className="block mx-auto">
-        <button className="bg-white mx-auto text-[15px] uppercase px-5 py-2 text-black font-[700] tracking-[2px] cursor-pointer hover:bg-[#00f7ff]">
+      <Link
+        to="/works"
+        className="block mx-auto"
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
+        <button className="bg-white mx-auto text-[13px] md:text-[15px] uppercase px-5 py-2 text-black font-[700] tracking-[2px] cursor-pointer hover:bg-[#00f7ff] hover:scale-90 duration-300">
           show more
         </button>
       </Link>

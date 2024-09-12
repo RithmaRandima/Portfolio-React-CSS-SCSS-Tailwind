@@ -6,9 +6,9 @@ import { VscRunAll } from "react-icons/vsc";
 
 const ProjectContainerBox = (props) => {
   return (
-    <div className="flex flex-col md:flex-row gap-2  h-[93vh] md:h-[100%] ">
+    <div className="flex flex-col md:flex-row gap-2  h-[98vh] md:h-[90vh] pt-[20px] ">
       {/* img */}
-      <div className="w-[100%] h-[280px] p-5 px-7  md:h-[430px]  flex items-center justify-center ">
+      <div className="w-[100%] h-[280px] p-5 px-7  md:h-[450px]  flex items-center justify-center ">
         <img
           // src={img1}
           src={props.img}
@@ -21,15 +21,11 @@ const ProjectContainerBox = (props) => {
         <h1 className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[300px] md:text-[380px] font-[700] z-[-1] text-[#ffffff0f] ">
           {props.number}
         </h1>
-        <h1 className="text-[28px] md:text-[32px] font-[700] capitalize mb-7">
+        <h1 className="text-[28px] md:text-[32px] font-[700] capitalize mb-7 text-white">
           {props.title}
         </h1>
         <p className="text-gray-400 text-[16px] leading-[25px] tracking-[1px] mb-7 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error
-          vero atque rerum molestias ut optio odit laudantium consectetur!
-          Dignissimos rerum laborum voluptates illo cum corporis dolores ipsam
-          dolorem laboriosam ab, possimus accusantium optio, a et dolor delectus
-          doloremque! Error.{props.description}
+          {props.description}
         </p>
 
         {/* features */}

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Links from "./links/Links";
-import img1 from "../../Asset/Untitled-2.jpg";
 import "./sidebar.scss";
 import ToggleButton from "./toggleButton/ToggleButton";
 import {
@@ -10,6 +9,11 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+
+import img1 from "../../Asset/sidebar-img-1.png";
+import img2 from "../../Asset/sidebar-img-2.png";
+import img3 from "../../Asset/sidebar-img-3.png";
+import img4 from "../../Asset/sidebar-img-4.png";
 
 const variants = {
   open: {
@@ -47,25 +51,28 @@ const Sidebar = () => {
         <Links setOpen={setOpen} />
 
         {/* img container */}
-        <div className="md:hidden absolute top-[390px] w-[90%] left-[50%] translate-x-[-50%]  h-[250px] my-4 grid grid-cols-3 gap-[10px]">
+        <div className="md:hidden absolute top-[390px] w-[90%] left-[50%] translate-x-[-50%]  h-[250px] my-4 grid grid-cols-2 gap-[10px]">
           <img
             src={img1}
-            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            className="w-[100%] h-[100px] object-contain rounded-[20px]"
             alt=""
           />
+
           <img
-            src={img1}
-            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            src={img2}
+            className="w-[100%] h-[100px] object-contain rounded-[20px]"
             alt=""
           />
+
           <img
-            src={img1}
-            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            src={img3}
+            className="w-[100%] h-[100px] object-contain rounded-[20px]"
             alt=""
           />
+
           <img
-            src={img1}
-            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            src={img4}
+            className="w-[100%] h-[100px] object-contain rounded-[20px]"
             alt=""
           />
         </div>

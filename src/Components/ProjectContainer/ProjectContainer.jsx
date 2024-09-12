@@ -93,6 +93,7 @@ const ProjectContainer = () => {
                 githubLink={work.githubLink}
                 figmaLink={work.figmaLink}
                 liveViewLink={work.liveViewLink}
+                description={work.description}
               />
             );
           })}
