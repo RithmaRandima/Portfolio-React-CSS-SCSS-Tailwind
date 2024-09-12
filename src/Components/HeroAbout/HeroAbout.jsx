@@ -165,7 +165,7 @@ const HeroAbout = ({ type }) => {
                     systems.
                   </p>
 
-                  <p className="text-[15px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
+                  <p className="hidden md:block text-[15px] mb-[20px] text-gray-400 tracking-[1px] leading-[29px] text-justify">
                     I thrive in collaborative environments and enjoy tackling
                     complex problems with creative, efficient solutions. My
                     commitment to continuous learning drives me to stay updated

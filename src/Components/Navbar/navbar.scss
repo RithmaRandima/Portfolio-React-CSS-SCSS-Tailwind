@@ -19,9 +19,10 @@
       padding: 20px;
     }
 
-    span {
+    .logo-name {
       font-weight: bold;
-      font-size: 25px;
+      font-size: 23px;
+      color: white;
       letter-spacing: 2px;
 
       @include mobile {
