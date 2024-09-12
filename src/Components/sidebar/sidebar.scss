@@ -66,6 +66,9 @@
           width: 70%;
         }
       }
+      @include mobile {
+        gap: 30px;
+      }
     }
   }
 

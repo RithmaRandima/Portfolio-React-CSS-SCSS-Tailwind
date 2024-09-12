@@ -47,7 +47,7 @@
     position: relative;
 
     @include mobile {
-      padding: 50px;
+      padding: 20px 30px;
       width: 100%;
     }
 
@@ -56,6 +56,16 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      svg {
+        width: 450px;
+        height: 450px;
+
+        @include mobile {
+          width: 300px;
+          height: 300px;
+        }
+      }
     }
 
     form {

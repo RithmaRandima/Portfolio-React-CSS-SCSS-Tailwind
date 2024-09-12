@@ -1,5 +1,13 @@
-import img1 from "../Asset/package1.jpg";
-import img2 from "../Asset/package4.jpg";
+import img1 from "../Asset/classy-fit.png";
+import img2 from "../Asset/footloose.png";
+import img3 from "../Asset/hycade.png";
+import img4 from "../Asset/brightside.png";
+import img5 from "../Asset/styleSync.png";
+import img7 from "../Asset/starlighters.png";
+import img6 from "../Asset/montrix.png";
+import img8 from "../Asset/gravityVR.png";
+import img9 from "../Asset/cafina.png";
+import img10 from "../Asset/theWalk.png";
 
 export const myWorks = [
   {
@@ -28,7 +36,7 @@ export const myWorks = [
     id: 2,
     number: "02",
     img: img2,
-    title: "FootLoose  Travel App",
+    title: "FootLoose Travel App",
     description: "",
     techniques: [
       "react-icons,",
@@ -49,7 +57,7 @@ export const myWorks = [
   {
     id: 3,
     number: "03",
-    img: img2,
+    img: img3,
     title: "Hycade Fashion App",
     description: "",
     techniques: [
@@ -71,7 +79,7 @@ export const myWorks = [
   {
     id: 4,
     number: "04",
-    img: img2,
+    img: img4,
     title: "BrightSide Restaurant App",
     description: "",
     techniques: [
@@ -93,7 +101,7 @@ export const myWorks = [
   {
     id: 5,
     number: "05",
-    img: img2,
+    img: img5,
     title: "StyleSync Fashion App",
     description: "",
     techniques: [
@@ -114,7 +122,7 @@ export const myWorks = [
   {
     id: 6,
     number: "06",
-    img: img2,
+    img: img6,
     title: "Montrix Data Analytic App",
     description: "",
     techniques: [
@@ -135,7 +143,7 @@ export const myWorks = [
   {
     id: 7,
     number: "07",
-    img: img2,
+    img: img7,
     title: "Starlighters  Travel App",
     description: "",
     techniques: [
@@ -156,7 +164,7 @@ export const myWorks = [
   {
     id: 8,
     number: "08",
-    img: img2,
+    img: img8,
     title: "Zero Gravity VR Cafe App",
     description: "",
     techniques: [
@@ -176,7 +184,7 @@ export const myWorks = [
   {
     id: 9,
     number: "09",
-    img: img2,
+    img: img9,
     title: "Cafina Coffee Cafe App",
     description: "",
     techniques: [
@@ -197,7 +205,7 @@ export const myWorks = [
   {
     id: 10,
     number: "10",
-    img: img2,
+    img: img10,
     title: "theWalk  Travel App",
     description: "",
     techniques: [

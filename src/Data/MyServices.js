@@ -11,7 +11,7 @@ export const myServices = [
   {
     id: 1,
     title: "Web Development",
-    description: `With a strong foundation in web development, I specialize in creating dynamic, responsive, and visually appealing websites using the latest technologies like HTML, CSS, React, and Next.js. Expert in CSS for custom design, JavaScript for interactivity and PHP for backend development, Tailwind uses Bootstrap for intuitive responsive layouts and Framer Motion for smooth animations.`,
+    description: `I specialize in web development, creating dynamic and responsive websites using HTML, CSS, React, Node.js and Next.js. I’m skilled in CSS for custom design, JavaScript for interactivity, PHP for backend work, and use Tailwind, Bootstrap, and lots of npm utility packages `,
     img: img1,
     icon: <FaHtml5 />,
   },
@@ -19,21 +19,21 @@ export const myServices = [
     id: 2,
 
     title: "Software development",
-    description: `I have a strong foundation in Java and C#, with hands-on experience developing real-world applications. Specifically, I developed hospital management systems using Java for New Lanka Hospital and Pro Health Hospital, designed to streamline operations such as patient records, billing and appointments. Additionally, I designed a C#-based cruise reservation system for Oceanlink Express, a POS system that efficiently manages reservations, payments and customer data.`,
+    description: `I have a solid foundation in Java, Python, and C#, with experience in real-world applications. I developed hospital management systems, Music School management system in Java, and a C#-based cruise reservation system, managing reservations, payments, and customer data.`,
     img: img2,
     icon: <RiUserSettingsFill />,
   },
   {
     id: 3,
     title: "Database Management",
-    description: `I have hands-on experience in database management, utilizing MySQL Workbench and XAMPP to design, implement, and manage databases effectively. In projects like the Hospital Management Website and Systems for New Lanka Hospital and Pro Health Hospital, I integrated robust databases to manage patient records, appointments, and billing. Similarly, in the Ship Booking System developed in C# for Oceanlink Express, I created a database to efficiently handle bookings, customer data, and payments.`,
+    description: `I have hands-on experience with MySQL Workbench, Node.js and XAMPP for database management. I’ve integrated robust databases for projects like hospital manage, E-Commerces Sites`,
     img: img3,
     icon: <BsDatabaseFillGear />,
   },
   {
     id: 4,
     title: "UI/UX Design",
-    description: `UI/UX design is a key aspect of my skill set, where I seamlessly blend creativity and functionality to enhance user experiences. Proficient in tools like Figma, Adobe Photoshop, Adobe XD, and Canva, I am adept at crafting intuitive and visually appealing interfaces.`,
+    description: `Skilled in UI/UX design, I excel in creating intuitive and engaging interfaces using Figma, Adobe Photoshop, Adobe XD, and Canva, balancing creativity with functionality.`,
     img: img4,
     icon: <MdOutlineDraw />,
   },

@@ -21,8 +21,10 @@ code {
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
   background: #0c0c1d;
+  box-shadow: none !important;
 }
 
 /* Handle */

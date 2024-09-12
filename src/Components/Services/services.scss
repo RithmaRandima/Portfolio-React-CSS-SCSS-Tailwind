@@ -134,8 +134,8 @@
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    gap: 30px;
-    margin: 50px auto;
+    gap: 5px;
+    margin: 20px auto;
 
     @include mobile {
       flex-direction: column;

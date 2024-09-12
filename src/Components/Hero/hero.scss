@@ -17,21 +17,26 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // gap: 20px;
 
       @include mobile {
-        height: 50%;
+        height: 48%;
         width: 100%;
-        gap: 20px;
+        gap: 15px;
         align-items: center;
         text-align: center;
+        top: 100px;
+        padding-top: 0px;
       }
 
       .greeting-text {
         font-size: 70px;
-        margin-bottom: -30px;
-        opacity: 0.1 !important;
+        margin-bottom: -20px;
+        opacity: 0.2 !important;
         letter-spacing: 2px;
+
+        @include mobile {
+          font-size: 30px;
+        }
       }
 
       h3 {
@@ -49,36 +54,52 @@
         margin-left: 30px;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 40px;
+          font-weight: 700;
           margin-left: 0px;
+          margin-bottom: 2px;
         }
       }
 
       p {
-        font-size: 17px;
+        font-size: 18px;
         width: 80%;
         line-height: 1.8;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         opacity: 0.6;
+
+        @include mobile {
+          width: 90%;
+        }
       }
 
       .looped-text {
         font-size: 30px;
         color: rgb(0, 247, 255);
         letter-spacing: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+
+        @include mobile {
+          font-size: 23px;
+          margin-bottom: 0px;
+          width: 90%;
+        }
       }
 
       .buttons {
+        position: static;
+        z-index: 10;
         button {
-          padding: 20px;
+          padding: 12px 20px;
           border: 1px solid white;
-          border-radius: 10px;
-          background-color: transparent;
-          color: white;
           margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
+          // font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+        @include mobile {
+          display: none;
         }
       }
 
@@ -98,7 +119,7 @@
     // background: red;
 
     @include mobile {
-      height: 50%;
+      height: 60%;
       width: 100%;
       top: unset;
       bottom: 0;
@@ -119,5 +140,10 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 40vh;
+      bottom: -80px;
+    }
   }
 }

@@ -46,8 +46,32 @@ const Sidebar = () => {
       <motion.div className="bg" variants={variants}>
         <Links setOpen={setOpen} />
 
+        {/* img container */}
+        <div className="md:hidden absolute top-[390px] w-[90%] left-[50%] translate-x-[-50%]  h-[250px] my-4 grid grid-cols-3 gap-[10px]">
+          <img
+            src={img1}
+            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            alt=""
+          />
+          <img
+            src={img1}
+            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            alt=""
+          />
+          <img
+            src={img1}
+            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            alt=""
+          />
+          <img
+            src={img1}
+            className="w-[100%] h-[100px] object-cover rounded-[20px]"
+            alt=""
+          />
+        </div>
+
         {/* details */}
-        <div className="absolute top-[360px] left-[20px] text-left w-[70%] mx-auto font-sans text-gray-500">
+        <div className="absolute top-[680px] md:top-[360px] left-[30px] text-left w-[70%] mx-auto font-sans text-gray-500">
           <div className="my-3">
             <h1 className="font-bold text-[16px] mb-2">Email</h1>
             <p className="text-[13px] text-gray-400">info@travel.com</p>

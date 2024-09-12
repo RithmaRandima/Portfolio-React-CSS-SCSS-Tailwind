@@ -2,6 +2,7 @@ import { ReactTyped } from "react-typed";
 import "./hero.scss";
 import { motion } from "framer-motion";
 import heroImg from "../../Asset/Untitled-1.png";
+import { Link } from "react-router-dom";
 
 const textVariants = {
   initial: {
@@ -49,7 +50,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h3 variants={textVariants}>
+          <motion.h3 variants={textVariants} className="hidden md:block">
             software engineer undergraduate
           </motion.h3>
           <motion.h2 variants={textVariants} className="greeting-text">
@@ -70,19 +71,34 @@ const Hero = () => {
             />
           </motion.h2>
 
-          <p>
-            I am Hasitha Dilshan, a dedicated software engineering undergraduate
-            currently completing my Higher National Diploma (HND) in Computing
-            at IDM Nations Campus. With a robust foundation in web design,
-            UI/UX, and frontend development, I have honed my skills in creating
-            visually appealing and user-friendly interfaces.
+          <p className="hidden md:block">
+            I'm Rithma Randima, a devoted undergraduate studying software
+            engineering. IDM Nations Campus is where I'm presently pursuing my
+            Higher National Diploma (HND) in Computing. I've developed my
+            ability to create attractive and easy to use interfaces by honing my
+            skills in web design, UI/UX, and frontend development.
+          </p>
+
+          <p className="md:hidden block">
+            I'm Rithma Randima, a devoted undergraduate studying software
+            engineering. I've developed my ability to create attractive and easy
+            to use interfaces by honing my skills in web design, UI/UX, and
+            frontend development.
           </p>
 
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+            <motion.button
+              variants={textVariants}
+              className="cursor-pointer bg-transparent text-white text-[13px]"
+            >
+              <Link to="/works"> See the Latest Works</Link>
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button
+              variants={textVariants}
+              className="bg-white text-black uppercase text-[12px]"
+            >
+              <Link to="/contact">Contact Me</Link>
+            </motion.button>
           </motion.div>
           <motion.img
             className="scroll-button"
@@ -93,6 +109,7 @@ const Hero = () => {
           />
         </motion.div>
       </div>
+
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
@@ -101,6 +118,7 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
+
       <div className="imageContainer">
         <img src={heroImg} alt="" />
       </div>
