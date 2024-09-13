@@ -29,10 +29,18 @@ const Navbar = () => {
           >
             <FaFacebook className="social-icon" />
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/rithy_randy/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <RiInstagramFill className="social-icon" />
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/randy-nandasiry-a35785328/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin className="social-icon" />
           </a>
           <a

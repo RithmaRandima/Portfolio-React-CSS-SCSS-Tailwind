@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  flex-direction: column;
 
   h1 {
     font-size: 70px;
@@ -63,6 +64,19 @@
       font-size: 48px;
       width: 90%;
       margin-top: -50px;
+    }
+  }
+
+  .buttons {
+    button {
+      padding: 12px 20px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin: auto;
+    }
+    @include mobile {
+      display: none;
     }
   }
 

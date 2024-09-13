@@ -78,73 +78,32 @@ const Sidebar = () => {
         </div>
 
         {/* details */}
-        <div className="absolute top-[680px] md:top-[360px] left-[30px] text-left w-[70%] mx-auto font-sans text-gray-500">
+        <div className="absolute top-[660px] md:top-[350px] left-[30px] text-left w-[70%] mx-auto font-sans text-gray-500">
           <div className="my-3">
-            <h1 className="font-bold text-[16px] mb-2">Email</h1>
-            <p className="text-[13px] text-gray-400">info@travel.com</p>
+            <h1 className="font-bold text-[17px] mb-2">Email</h1>
+            <p className="text-[14px] text-gray-400">
+              rithma.r.namdasiri@gmail.com
+            </p>
           </div>
 
           <div className="my-3">
-            <h1 className="font-bold text-[16px] mb-2">Phone</h1>
-            <p className="text-[13px] text-gray-400">
-              Travel Agency + 1 473 483 384
-            </p>
-            <p className="text-[13px] text-gray-400">
-              info insurance + 1 474 499 384
-            </p>
+            <h1 className="font-bold text-[17px] mb-2">Phone</h1>
+            <p className="text-[14px] text-gray-400">Number + 1 473 483 384</p>
+            <p className="text-[14px] text-gray-400">Number + 1 474 499 384</p>
           </div>
 
           <div className="my-2">
-            <h1 className="font-bold text-[16px]">Follow Us</h1>
+            <h1 className="font-bold text-[17px]">Follow Us</h1>
             <div className="flex justify-between items-center mt-3 w-[50%] gap-[16px]">
-              <FaFacebook className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-              <FaTwitter className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-              <FaLinkedinIn className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-              <FaInstagram className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+              <FaFacebook className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff]  cursor-pointer duration-200" />
+              <FaTwitter className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              <FaLinkedinIn className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              <FaInstagram className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
             </div>
           </div>
         </div>
       </motion.div>
       <ToggleButton setOpen={setOpen} />
-
-      {/* img container */}
-      {/* <div className="w-[70%] mx-auto h-[180px] my-4 grid grid-cols-3 gap-[15px]">
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-
-        <img
-          src={img1}
-          className="w-[100%] h-[80px] object-cover rounded-[20px]"
-          alt=""
-        />
-      </div> */}
     </motion.div>
   );
 };

@@ -92,6 +92,7 @@
           padding: 10px;
           align-items: center;
           text-align: center;
+          gap: 20px;
         }
 
         h2 {
@@ -109,7 +110,7 @@
           font-size: 16px;
 
           @include mobile {
-            font-size: 15px;
+            font-size: 14px;
           }
         }
 

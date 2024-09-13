@@ -11,6 +11,7 @@ const AboutParallax = ({ type }) => {
   });
 
   const yText = useTransform(scrollYProgress, [1, 0], ["0%", "-250%"]);
+  const yButton = useTransform(scrollYProgress, [1, 0], ["0%", "-1000%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
   return (
@@ -21,10 +22,14 @@ const AboutParallax = ({ type }) => {
         background: "linear-gradient(180deg, #111132, #0c0c1d)",
       }}
     >
-      {/* <img src={} alt="" /> */}
       <motion.h1 style={{ y: yText }} className="parallax-text">
         I'm Ready to Work With You
       </motion.h1>
+      <motion.div style={{ y: yButton }} className="buttons">
+        <motion.button className="bg-white text-black uppercase text-[12px]">
+          Download CV
+        </motion.button>
+      </motion.div>
       <motion.div className="mountains"></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>
     </div>

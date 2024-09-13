@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const iconVariants = (duration) => ({
   initial: { scale: 1 },
   animate: {
-    scale: [0.97, 1.09],
+    scale: [0.93, 1.099],
     transition: {
       duration: duration,
       ease: "linear",

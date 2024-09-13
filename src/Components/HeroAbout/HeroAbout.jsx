@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./HeroAbout.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
-import img from "../../Asset/Untitled-2.jpg";
+import img from "../../Asset/About_Small.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -222,7 +222,7 @@ const HeroAbout = ({ type }) => {
                     <li className="text-[#00f7ff] text-[18px] mb-4">
                       <span className="text-gray-400 mr-2">Address</span> -
                       <span className="text-white ml-2 font-[600] tracking-[1px]">
-                        Rithma Randima
+                        No:231/4 "Gimhani", Darmarama Road, Ahangama, Galle.
                       </span>
                     </li>
 

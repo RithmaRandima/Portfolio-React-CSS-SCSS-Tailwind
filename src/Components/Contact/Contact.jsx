@@ -21,6 +21,9 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
+  let nameref = useRef("");
+  let emailref = useRef("");
+  let messageref = useRef("");
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -31,14 +34,21 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_qz96fjc",
+        "template_kug0wzg",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "QGeu-i7KRQNWNgmdJ"
       )
       .then(
         (result) => {
           setSuccess(true);
+
+          setTimeout(() => {
+            nameref.current.value = "";
+            emailref.current.value = "";
+            messageref.current.value = "";
+            setSuccess(false);
+          }, 2000);
         },
         (error) => {
           setError(true);
@@ -57,16 +67,29 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2 className="text-[22px] md:text-[18px] text-white font-[700] tracking-[1px] mb-1">
+            Mail
+          </h2>
+          <span className="text-[18px] md:text-[14px] tracking-[1px] ">
+            rithma.r.nandasiri@gmail.com
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2 className="text-[22px] md:text-[18px] text-white font-[700] tracking-[1px] mb-1">
+            Address
+          </h2>
+          <span className="text-[18px] md:text-[14px] tracking-[1px] ">
+            No:231/4 "Gimhani", <br /> Darmarama Road, <br /> Ahangama, Galle,{" "}
+            <br /> Sri Lanka.
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <h2 className="text-[22px] md:text-[18px] text-white font-[700] tracking-[1px] mb-1">
+            Phone
+          </h2>
+          <span className="text-[18px] md:text-[14px] tracking-[1px] ">
+            +1 234 5678
+          </span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -106,10 +129,29 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
+          <input
+            type="text"
+            required
+            placeholder="Name"
+            name="name"
+            ref={nameref}
+          />
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            name="email"
+            ref={emailref}
+          />
+          <textarea
+            rows={8}
+            placeholder="Message"
+            name="message"
+            ref={messageref}
+          />
+          <button type="submit" value="Send">
+            Submit
+          </button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>

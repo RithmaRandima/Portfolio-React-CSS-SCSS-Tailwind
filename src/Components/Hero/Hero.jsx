@@ -1,7 +1,7 @@
 import { ReactTyped } from "react-typed";
 import "./hero.scss";
 import { motion } from "framer-motion";
-import heroImg from "../../Asset/Untitled-1.png";
+import heroImg from "../../Asset/Hero_Img.png";
 import { Link } from "react-router-dom";
 
 const textVariants = {
@@ -97,7 +97,7 @@ const Hero = () => {
               variants={textVariants}
               className="bg-white text-black uppercase text-[12px]"
             >
-              <Link to="/contact">Contact Me</Link>
+              <Link to="/contact">Download CV</Link>
             </motion.button>
           </motion.div>
           <motion.img

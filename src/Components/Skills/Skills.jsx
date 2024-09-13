@@ -115,7 +115,12 @@ const Skills = () => {
         </motion.p>
       </div>
 
-      <div className="w-[95%] md:w-[100%] mx-auto h-[100%]">
+      <motion.div
+        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.3 }}
+        transition={{ duration: 0.5 }}
+        className="w-[95%] md:w-[100%] mx-auto h-[100%]"
+      >
         <Slider {...settings}>
           {/* skill 01 */}
           <div className="w-[100%] h-[100%]">
@@ -301,7 +306,7 @@ const Skills = () => {
             </div>
           </div>
         </Slider>
-      </div>
+      </motion.div>
     </div>
   );
 };

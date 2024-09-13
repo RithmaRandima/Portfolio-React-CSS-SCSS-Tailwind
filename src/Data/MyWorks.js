@@ -8,6 +8,7 @@ import img6 from "../Asset/montrix.png";
 import img8 from "../Asset/gravityVR.png";
 import img9 from "../Asset/cafina.png";
 import img10 from "../Asset/theWalk.png";
+import img11 from "../Asset/portfolio.png";
 
 export const myWorks = [
   {
@@ -21,8 +22,6 @@ export const myWorks = [
       "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
-      "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -43,8 +42,6 @@ export const myWorks = [
       "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
-      "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -87,8 +84,6 @@ export const myWorks = [
       "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
-      "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -110,7 +105,6 @@ export const myWorks = [
       "tailwind-merge,",
       "react-typed,",
       "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -130,14 +124,13 @@ export const myWorks = [
       "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
-      "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
     githubLink:
       "https://github.com/RithmaRandima/Montrix-Data-Analytics-React-Tailwind",
-    figmaLink: "",
+    figmaLink:
+      "https://www.figma.com/design/BJ5hjOsvllxD92IpepTYen/Montrix-Data-Analytic?t=7jZgJiG49AxC1pDK-0",
     liveViewLink: "",
   },
   {
@@ -152,7 +145,6 @@ export const myWorks = [
       "tailwind-merge,",
       "react-typed,",
       "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -170,10 +162,8 @@ export const myWorks = [
     techniques: [
       "react-icons,",
       "framer-motion,",
-      "tailwind-merge,",
       "react-typed,",
       "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -192,8 +182,6 @@ export const myWorks = [
       "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
-      "react-router-dom,",
-      "react-scroll-trigger,",
       "react-slick",
     ],
     languages: ["React", "CSS", "Tailwind"],
@@ -211,13 +199,36 @@ export const myWorks = [
     techniques: [
       "react-icons,",
       "framer-motion,",
+      "react-typed,",
+      "react-scroll-trigger,",
+      "react-slick",
+    ],
+    languages: ["React", "CSS", "Tailwind"],
+    githubLink: "https://github.com/RithmaRandima/theWalk-Travel-Site-React.js",
+    figmaLink:
+      "https://www.figma.com/design/qaTTQP6kjcOoJ9m79zDG6w/theWalk-Travel-Site?t=Oa6zsrt36qRlpx0w-0",
+    liveViewLink: "",
+  },
+  {
+    id: 11,
+    number: "11",
+    img: img11,
+    title: "Portfolio",
+    description: `This is my multi-page portfolio app, designed with a minimalist and calming aesthetic. It includes a Home page, About Me page, My Work page, and a fully functional Contact page, along with a beautifully animated sidebar. Developed using React.js, Tailwind CSS, SCSS, and CSS, the app delivers smooth animations powered by Framer Motion, Parallax, Slick, react-icons, and react-typed, ensuring an engaging user experience.`,
+    techniques: [
+      "react-icons,",
+      "framer-motion,",
       "tailwind-merge,",
       "react-typed,",
       "react-router-dom,",
       "react-scroll-trigger,",
       "react-slick",
+      "react-scroll-trigger",
+      "react-countup",
+      "sass",
+      "tailwind-merge,",
     ],
-    languages: ["React", "CSS", "Tailwind"],
+    languages: ["React", "CSS", "SCSS", "Tailwind"],
     githubLink: "https://github.com/RithmaRandima/theWalk-Travel-Site-React.js",
     figmaLink:
       "https://www.figma.com/design/qaTTQP6kjcOoJ9m79zDG6w/theWalk-Travel-Site?t=Oa6zsrt36qRlpx0w-0",
