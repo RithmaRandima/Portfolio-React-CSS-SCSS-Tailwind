@@ -88,7 +88,7 @@ const Contact = () => {
             Phone
           </h2>
           <span className="text-[18px] md:text-[14px] tracking-[1px] ">
-            +1 234 5678
+            (+94)77 022 0407
           </span>
         </motion.div>
       </motion.div>

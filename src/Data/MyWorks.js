@@ -227,6 +227,7 @@ export const myWorks = [
       "react-countup",
       "sass",
       "tailwind-merge,",
+      "file-saver",
     ],
     languages: ["React", "CSS", "SCSS", "Tailwind"],
     githubLink: "https://github.com/RithmaRandima/theWalk-Travel-Site-React.js",

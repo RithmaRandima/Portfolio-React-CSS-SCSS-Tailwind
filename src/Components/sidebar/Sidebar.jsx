@@ -3,17 +3,13 @@ import { motion } from "framer-motion";
 import Links from "./links/Links";
 import "./sidebar.scss";
 import ToggleButton from "./toggleButton/ToggleButton";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import img1 from "../../Asset/sidebar-img-1.png";
 import img2 from "../../Asset/sidebar-img-2.png";
 import img3 from "../../Asset/sidebar-img-3.png";
 import img4 from "../../Asset/sidebar-img-4.png";
+import { IoLogoGithub } from "react-icons/io";
 
 const variants = {
   open: {
@@ -88,17 +84,48 @@ const Sidebar = () => {
 
           <div className="my-3">
             <h1 className="font-bold text-[17px] mb-2">Phone</h1>
-            <p className="text-[14px] text-gray-400">Number + 1 473 483 384</p>
-            <p className="text-[14px] text-gray-400">Number + 1 474 499 384</p>
+            <p className="text-[14px] text-gray-400">
+              Number (+94) 77 022 0407
+            </p>
+            <p className="text-[14px] text-gray-400">
+              Number (+94) 71 480 7216
+            </p>
           </div>
 
           <div className="my-2">
             <h1 className="font-bold text-[17px]">Follow Us</h1>
             <div className="flex justify-between items-center mt-3 w-[50%] gap-[16px]">
-              <FaFacebook className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff]  cursor-pointer duration-200" />
-              <FaTwitter className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
-              <FaLinkedinIn className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
-              <FaInstagram className="text-[25px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              <a
+                href="https://www.facebook.com/profile.php?id=100084298615209"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebook className="text-[20px] text-[#000] hover:scale-125 hover:text-[#00f7ff]  cursor-pointer duration-200" />
+              </a>
+
+              <a
+                href="https://github.com/RithmaRandima"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoLogoGithub className="text-[20px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/randy-nandasiry-a35785328/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn className="text-[20px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/rithy_randy/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram className="text-[20px] text-[#000] hover:scale-125 hover:text-[#00f7ff] cursor-pointer duration-200" />
+              </a>
             </div>
           </div>
         </div>

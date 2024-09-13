@@ -3,6 +3,7 @@ import "./hero.scss";
 import { motion } from "framer-motion";
 import heroImg from "../../Asset/Hero_Img.png";
 import { Link } from "react-router-dom";
+import FileSaver from "file-saver";
 
 const textVariants = {
   initial: {
@@ -38,6 +39,13 @@ const sliderVariants = {
       duration: 20,
     },
   },
+};
+
+const saveFile = () => {
+  FileSaver.saveAs(
+    process.env.PUBLIC_URL + "/resource/Rithma_Randima_CV.pdf",
+    "Rithma_Randima_CV.pdf"
+  );
 };
 
 const Hero = () => {
@@ -96,8 +104,9 @@ const Hero = () => {
             <motion.button
               variants={textVariants}
               className="bg-white text-black uppercase text-[12px]"
+              onClick={saveFile}
             >
-              <Link to="/contact">Download CV</Link>
+              Download CV
             </motion.button>
           </motion.div>
           <motion.img
